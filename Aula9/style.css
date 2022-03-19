@@ -78,7 +78,7 @@ body {
     width: 100%;
 }
 
-.bg__profile {
+#bg__profile {
     background-image: url("./images/profile.webp");
     background-repeat: no-repeat;
     background-position: top right;

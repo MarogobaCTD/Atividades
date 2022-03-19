@@ -14,15 +14,23 @@
     //1.1. Quando houver o click do usuário, a sidebar deverá ser apresentada: `<div class="l-sidebar">`
     
     botao.addEventListener("click", function(evento){
-        // sidebar.classList.add("l-sidebar--close");
-         sidebar.classList.add("l-sidebar--open");
-         console.log(sidebar);
+        // **botão Menu**: `<button class="l-sidebar__btn"type="button">Menu</button>.
+         botao.classList.add("l-sidebar__btn");
+         console.log(botao);
     })
 
+
+    botao.addEventListener("click", function(evento){
+        // sidebar.classList.add("l-sidebar--open");
+         sidebar.classList.add("l-sidebar--open");
+         console.log(botao);
+    })
+        // sidebar.classList.add("l-sidebar--close");
     sidebar.addEventListener("click", function(evento){
         sidebar.classList.remove("l-sidebar--open");
         sidebar.classList.add("l-sidebar--close");
         sidebar.classList.remove("l-sidebar--close");
+        console.log(sidebar);
     });
 
     //2. **(20pts)** O usuário poderá usar o teclado para abrir ou fechar a sidebar. No caso, as tecla `Space`.
