@@ -161,3 +161,13 @@ body {
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
+.cursor{
+    width: 100px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    background: transparent;
+    color: white;
+    font-size: 0.8rem;
+}

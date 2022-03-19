@@ -60,10 +60,18 @@
       // 
         })
 
+        // 4. **(20pts)** Um boxe de texto irá acompanhar o cursor do mouse.
+        var cursor = document.querySelector(".cursor");
+
+        //capturar a posição do mouse na tela
+        document.addEventListener("mousemove", function(evento){
+            let xPos = evento.pageX + 15;
+            let yPos = evento.pageY + 15;
+            
+            cursor.style.left = xPos + "px";
+            cursor.style.top = yPos + "px";
+        
+        })
+
     });
 
-    
-    
-    
-    // 4. **(20pts)** Um boxe de texto irá acompanhar o cursor do mouse.
-// mostra a mensagem
