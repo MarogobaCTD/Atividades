@@ -6,7 +6,9 @@
     var botao = document.querySelector(".l-sidebar__btn");
     var sidebar = document.querySelector(".l-sidebar");
     var controle = 0;
-    let sobreMim = document.getElementById('sobre-mim')
+    let page = document.querySelector("#bg__profile");
+    let sobremim = document.querySelector("#sobre-mim");
+    let contatos = document.querySelector("#contatos");
     
     //1. **(20pts)** Esta sessão deverá ser apresentada sempre que houver o click no **botão Menu**: `<button class="l-sidebar__btn"type="button">Menu</button>`.
     //1.1. Quando houver o click do usuário, a sidebar deverá ser apresentada: `<div class="l-sidebar">`
@@ -43,11 +45,7 @@
     
     // 3. **(20pts)** O usuário poderá usar o mouse para abrir ou fechar a sidebar. No caso, um duplo click em qualquer local do site irá abrir ou fechar a sidebar.
 
-    app.addEventListener("dblclick" , function(evento){ 
-        console.log(evento.target);
-        //evento.target.addEventListener("dblclick", function(evento){console.log("teste")
-            //   console.log(evento.target);
-            
+    app.addEventListener("dblclick" , function(evento){            
                 if (controle == 0) {
                     sidebar.classList.add("l-sidebar--open");
                     controle = 1;
@@ -58,7 +56,7 @@
                     controle = 0;
                 }
       // 
-        })
+        });
 
         // 4. **(20pts)** Um boxe de texto irá acompanhar o cursor do mouse.
         var cursor = document.querySelector(".cursor");
@@ -71,7 +69,24 @@
             cursor.style.left = xPos + "px";
             cursor.style.top = yPos + "px";
         
-        })
+        });
+        
+        // 4.1. O texto deverá mudar quando o cursor do mouse sobrepor qualquer uma das sessão do site:
 
+        // - Receberá o texto `Bem vindo`.   
+        // - Receberá o texto `Sobre mim`.
+        // - Receberá o texto `Contatos`.
+        page.addEventListener("mouseover", function(evento){
+                cursor.innerHTML = "Bem-vindo!";
+        });
+
+        sobremim.addEventListener("mouseover", function(evento){
+            cursor.innerHTML = "Sobre Mim!";
+        });
+
+        contatos.addEventListener("mousemove", function(evento){
+            cursor.innerHTML = "Contatos!";
+        });
+        
     });
 
