@@ -85,16 +85,14 @@
         // - Receberá o texto `Sobre mim`.
         // - Receberá o texto `Contatos`.
         page.addEventListener("mouseover", function(evento){
-                cursor.innerHTML = "Bem-vindo!";
+                cursor.innerHTML = "Bem vindo";
         });
 
         sobremim.addEventListener("mouseover", function(evento){
-            cursor.innerHTML = "Sobre Mim!";
+            cursor.innerHTML = "Sobre Mim";
         });
 
         contatos.addEventListener("mousemove", function(evento){
-            cursor.innerHTML = "Contatos!";
+            cursor.innerHTML = "Contatos";
         });
-        
-    });
-
+});
