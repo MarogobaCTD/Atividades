@@ -1,9 +1,14 @@
 # Aula 09: Primeiro feedback
 
-Adicione uma item na lista com o nome do trio e link do repositório. Caso tenha dúvida, procure o professor, turo(a) e/ou auxiliar técnico.
+DarioOlah
+EdmarBS
+Lucas Ferreira Nogueira
+Marcelo Roberto Gomes Barbosa
+Rodrigo Escobar
+
 
 <br>
 
 ## Lista de repositórios da atividade resolvida
 
-Coloque seu repositório na lista a seguir:
+Coloque seu repositório na lista a seguir: 
