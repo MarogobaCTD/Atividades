@@ -1,7 +1,7 @@
 # Aula 09: Primeiro feedback
 
 DarioOlah
-EdmarBS
+Edmar Billa
 Lucas Ferreira Nogueira
 Marcelo Roberto Gomes Barbosa
 Rodrigo Escobar
